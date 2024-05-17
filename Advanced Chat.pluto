@@ -1,5 +1,4 @@
 --credits to lance this is rewritten from chitchat to be improved upon by acjoker8818
-util.ensure_package_is_installed('natives-1681379138')
 util.require_natives('natives-1681379138.g')
 local my = menu.my_root()
 local player_is_muted = {}
