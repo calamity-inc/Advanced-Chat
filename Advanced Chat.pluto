@@ -377,7 +377,7 @@ chat.on_message(function (sender, reserved, text, team_chat, networked, is_auto)
         return
     end
 
-    local tag = if team_chat then 'TEAM' else 'ALL'
+    local tag = team_chat ? 'TEAM' : 'ALL'
     if tag_mode == 2 then 
         tag = players.get_tags_string(sender)
     elseif tag_mode == 3 then
